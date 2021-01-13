@@ -3,7 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  envName: 'local',
+  apiGateway: {
+    url: 'http://localhost:9071/api'
+  },
+  pageSizeOptions: [10, 25, 50],
+  dateFormat: 'dd/MM/yyyy'
 };
 
 /*

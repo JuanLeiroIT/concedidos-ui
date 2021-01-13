@@ -42,6 +42,26 @@
 @import 'https://fonts.googleapis.com/css?family=Material+Icons';
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+//Scroll style
+:-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+
+::-webkit-scrollbar-thumb {
+background-color: #ffe15c; //#F90 //gray //
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+}
+
 $fontConfig: (
   display-4: mat-typography-level(112px, 112px, 300, 'Roboto', -0.0134em),
   display-3: mat-typography-level(56px, 56px, 400, 'Roboto', -0.0089em),
